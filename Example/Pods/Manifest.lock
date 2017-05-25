@@ -1,11 +1,11 @@
 PODS:
-  - NumericAnimatedLabel (0.1.1)
+  - NumericAnimatedLabel (0.1.2)
 
 DEPENDENCIES:
   - NumericAnimatedLabel
 
 SPEC CHECKSUMS:
-  NumericAnimatedLabel: f14cd0ec9afc4e0b6d08cd1de745957e1b975dbe
+  NumericAnimatedLabel: 5ee02f697074fb37d8740e06728823e6b86b2622
 
 PODFILE CHECKSUM: 72334133a1cae855cdf1360afed8d479979e2da4
 
