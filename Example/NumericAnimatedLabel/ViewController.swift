@@ -12,11 +12,11 @@ import NumericAnimatedLabel
 class ViewController: UIViewController {
 
     @IBOutlet weak var numericLabel: NumericAnimatedLabel!
-    var walletBalance:Double = 0.0
-    
+    var walletBalance: Double = 0.0
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        numericLabel.setValue(v: walletBalance)
+        numericLabel.setValue(value: walletBalance)
         numericLabel.textAlignment = .center
         numericLabel.formatString = "%.2f"
         numericLabel.textFont = UIFont.boldSystemFont(ofSize: 20.0)
@@ -24,12 +24,12 @@ class ViewController: UIViewController {
 
     @IBAction func addClicked(_ sender: Any) {
         walletBalance += 4.5
-        numericLabel.setValue(v: walletBalance)
+        numericLabel.setValue(value: walletBalance)
     }
-    
+
     @IBAction func subtractClicked(_ sender: Any) {
         walletBalance -= 2.5
-        numericLabel.setValue(v: walletBalance)
+        numericLabel.setValue(value: walletBalance)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -37,4 +37,3 @@ class ViewController: UIViewController {
     }
 
 }
-

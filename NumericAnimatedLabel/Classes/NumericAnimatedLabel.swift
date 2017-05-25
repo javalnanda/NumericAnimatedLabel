@@ -17,15 +17,15 @@ public class NumericAnimatedLabel: UIView {
      }
      */
     
-    var animationTimer:Timer? = nil
-    var targetValue:Double = 0.0
-    var currentValue:Double = 0.0
-    var stepSize:Double = 0.0
+    var animationTimer: Timer?
+    var targetValue: Double = 0.0
+    var currentValue: Double = 0.0
+    var stepSize: Double = 0.0
     
     var label: UILabel!
     open var textFont: UIFont = UIFont.systemFont(ofSize: 16.0)
     open var textAlignment: NSTextAlignment = NSTextAlignment.center {
-        didSet{
+        didSet {
             label.textAlignment = textAlignment
         }
     }
@@ -73,13 +73,12 @@ public class NumericAnimatedLabel: UIView {
         self.addSubview(label)
     }
     
-    
-    public func setValue(v: Double) {
-        if (animationTimer != nil) {
+    public func setValue(value: Double) {
+        if animationTimer != nil {
             animationTimer?.invalidate()
         }
         
-        targetValue = v
+        targetValue = value
         stepSize = (targetValue - currentValue) / 20.0
         
         animationTimer = Timer.scheduledTimer(timeInterval: (1/40.0), target: self, selector: #selector(onAnimationTimer), userInfo: nil, repeats: true)
@@ -88,23 +87,23 @@ public class NumericAnimatedLabel: UIView {
     
     func onAnimationTimer() {
         currentValue += stepSize
-        updateCurrentValue(v: currentValue)
-        if (stepSize < 0) {
-            if (currentValue < targetValue) {
+        updateCurrentValue(value: currentValue)
+        if stepSize < 0 {
+            if currentValue < targetValue {
                 //done decreasing
                 currentValue = targetValue
-                updateCurrentValue(v: targetValue)
-                if ((animationTimer) != nil) {
+                updateCurrentValue(value: targetValue)
+                if (animationTimer) != nil {
                     animationTimer?.invalidate()
                     animationTimer = nil
                 }
             }
         } else {
-            if (currentValue > targetValue) {
+            if currentValue > targetValue {
                 //done increasing
                 currentValue = targetValue
-                updateCurrentValue(v: targetValue)
-                if ((animationTimer) != nil) {
+                updateCurrentValue(value: targetValue)
+                if (animationTimer) != nil {
                     animationTimer?.invalidate()
                     animationTimer = nil
                 }
@@ -112,8 +111,8 @@ public class NumericAnimatedLabel: UIView {
         }
     }
     
-    func updateCurrentValue(v: Double) {
-        self.label.text = String(format: self.formatString, v)
+    func updateCurrentValue(value: Double) {
+        self.label.text = String(format: self.formatString, value)
     }
     
 }

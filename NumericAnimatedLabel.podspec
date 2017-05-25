@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NumericAnimatedLabel'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Animate your label value while updating to new value. For e.g while setting currency amount for your wallet application.'
 
 # This description is used to generate tags and improve search results.
