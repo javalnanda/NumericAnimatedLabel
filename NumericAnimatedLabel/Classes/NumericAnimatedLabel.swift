@@ -29,11 +29,13 @@ public class NumericAnimatedLabel: UIView {
             label.textAlignment = textAlignment
         }
     }
+    
     @IBInspectable open var labelTextColor: UIColor = UIColor.black {
         didSet {
             label.textColor = labelTextColor
         }
     }
+    
     open var formatString: String = "%.2f"
     
     public override init(frame: CGRect) {
@@ -65,9 +67,6 @@ public class NumericAnimatedLabel: UIView {
         toView.addConstraint(constraint)
     }
     
-    
-    
-    
     func updateView() {
         self.clipsToBounds = true
         label = UILabel(frame: self.frame)
@@ -80,15 +79,15 @@ public class NumericAnimatedLabel: UIView {
             animationTimer?.invalidate()
         }
         
-        targetValue = v;
-        stepSize = (targetValue - currentValue) / 20.0;
+        targetValue = v
+        stepSize = (targetValue - currentValue) / 20.0
         
         animationTimer = Timer.scheduledTimer(timeInterval: (1/40.0), target: self, selector: #selector(onAnimationTimer), userInfo: nil, repeats: true)
         
     }
     
     func onAnimationTimer() {
-        currentValue += stepSize;
+        currentValue += stepSize
         updateCurrentValue(v: currentValue)
         if (stepSize < 0) {
             if (currentValue < targetValue) {
@@ -97,17 +96,17 @@ public class NumericAnimatedLabel: UIView {
                 updateCurrentValue(v: targetValue)
                 if ((animationTimer) != nil) {
                     animationTimer?.invalidate()
-                    animationTimer = nil;
+                    animationTimer = nil
                 }
             }
         } else {
             if (currentValue > targetValue) {
-                //done increasing;
-                currentValue = targetValue;
+                //done increasing
+                currentValue = targetValue
                 updateCurrentValue(v: targetValue)
                 if ((animationTimer) != nil) {
                     animationTimer?.invalidate()
-                    animationTimer = nil;
+                    animationTimer = nil
                 }
             }
         }
