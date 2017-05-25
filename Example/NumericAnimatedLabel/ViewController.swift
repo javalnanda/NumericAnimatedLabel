@@ -20,8 +20,6 @@ class ViewController: UIViewController {
         numericLabel.textAlignment = .center
         numericLabel.formatString = "%.2f"
         numericLabel.textFont = UIFont.boldSystemFont(ofSize: 20.0)
-
-        
     }
 
     @IBAction func addClicked(_ sender: Any) {

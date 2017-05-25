@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'NumericAnimatedLabel_Example' do
-  pod 'NumericAnimatedLabel', :path => '../'
+  pod 'NumericAnimatedLabel'
 
   target 'NumericAnimatedLabel_Tests' do
     inherit! :search_paths
