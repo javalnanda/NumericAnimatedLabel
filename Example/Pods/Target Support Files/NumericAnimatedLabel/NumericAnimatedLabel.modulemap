@@ -1,0 +1,6 @@
+framework module NumericAnimatedLabel {
+  umbrella header "NumericAnimatedLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

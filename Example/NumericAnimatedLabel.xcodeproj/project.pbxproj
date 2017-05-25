@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		19A2C94EB97D6A7AFCE5D321 /* Pods-NumericAnimatedLabel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumericAnimatedLabel_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NumericAnimatedLabel_Example/Pods-NumericAnimatedLabel_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1EB646F2EE033456F31EEE31 /* Pods-NumericAnimatedLabel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumericAnimatedLabel_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NumericAnimatedLabel_Tests/Pods-NumericAnimatedLabel_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		37FB1012442A758427AD9DFC /* NumericAnimatedLabel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NumericAnimatedLabel.podspec; path = ../NumericAnimatedLabel.podspec; sourceTree = "<group>"; };
+		37FB1012442A758427AD9DFC /* NumericAnimatedLabel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NumericAnimatedLabel.podspec; path = ../NumericAnimatedLabel.podspec; sourceTree = "<group>"; };
 		4AE6D76EB1D15BF12701909E /* Pods-NumericAnimatedLabel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumericAnimatedLabel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NumericAnimatedLabel_Tests/Pods-NumericAnimatedLabel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		59DEC8FDBC1D865870F00784 /* Pods_NumericAnimatedLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NumericAnimatedLabel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* NumericAnimatedLabel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumericAnimatedLabel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,10 +43,10 @@
 		607FACE51AFB9204008FA782 /* NumericAnimatedLabel_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumericAnimatedLabel_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		A4191E00A090EEF9DF1D8975 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A4191E00A090EEF9DF1D8975 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C7A3DD983E73CAEE458BD66A /* Pods_NumericAnimatedLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NumericAnimatedLabel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5D1ED0105B0F7CD532BC73 /* Pods-NumericAnimatedLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumericAnimatedLabel_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NumericAnimatedLabel_Example/Pods-NumericAnimatedLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EEDCBF9B294C7D0DD235B106 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EEDCBF9B294C7D0DD235B106 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -497,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NumericAnimatedLabel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -511,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NumericAnimatedLabel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NumericAnimatedLabel'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NumericAnimatedLabel.'
+  s.summary          = 'Animate your label value while updating to new value. For e.g while setting currency amount for your wallet application.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+NumericAnimatedLabel provides a way to show step incremental animation for setting numeric value on label. This can be used in scenario for showing currency value and other similar usecases.
                        DESC
 
   s.homepage         = 'https://github.com/javalnanda/NumericAnimatedLabel'
@@ -26,9 +26,9 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'javalnanda' => 'javalnanda@gmail.com' }
   s.source           = { :git => 'https://github.com/javalnanda/NumericAnimatedLabel.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/javalnanda'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'NumericAnimatedLabel/Classes/**/*'
   
@@ -37,6 +37,5 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # s.frameworks = 'UIKit'
 end

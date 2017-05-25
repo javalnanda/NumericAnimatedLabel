@@ -1,0 +1,16 @@
+PODS:
+  - NumericAnimatedLabel (0.1.0)
+
+DEPENDENCIES:
+  - NumericAnimatedLabel (from `../`)
+
+EXTERNAL SOURCES:
+  NumericAnimatedLabel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NumericAnimatedLabel: a6ba2b0bb6a306af0a8f55754ec55c9adfcd4cd5
+
+PODFILE CHECKSUM: 8220006c9a5ca19796cf624f9ad5f4a991e14279
+
+COCOAPODS: 1.2.1
